@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exit Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(71, 62, 35);
+            font-size: 36px; 
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px; 
+            margin-bottom: 40px;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db; 
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 2s linear infinite; 
+            margin: 0 auto; 
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank you for visiting!</h1>
+    <p>Redirecting you to your profile page...</p>
+    <div class="loader"></div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "profile.html"; 
+        }, 3000); 
+    </script>
+</body>
+</html>

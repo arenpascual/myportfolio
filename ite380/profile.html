@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Add relative positioning to allow absolute positioning within body */
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #cbbf95; 
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            color: #0e0d0d; 
+            position: relative; 
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .info p {
+            margin: 0;
+        }
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff; 
+        }
+        .buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        .buttons a {
+            background-color: #cbbf95;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: normal; /* Change font weight to normal */
+            transition: background-color 0.3s ease;
+        }
+        .buttons a:hover {
+            background-color: #b3a67b;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px; /* Add margin top for spacing */
+        }
+        .image-container a {
+            text-decoration: none; /* Remove underline from links */
+        }
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 3px solid #fff; 
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <!-- Homepage button -->
+        <a href="homepage.html"><b>Back to Homepage</b></a>
+    </div>
+    <div class="container">
+        <h1>My Profile</h1>
+        <div class="profile-pic">
+            <img src="ako.jpg" alt="Profile Photo">
+        </div>
+        <div class="info">
+            <p><b>Name:</b> Arenvie B. Pascual</p>
+            <p><b>Address:</b> Purok 4, Brgy. Pambuan, Gapan City, Nueva Ecija</p>
+            <p><b>Year and Section:</b> 2nd Year - South 4</p>
+            <p><b>Motto in Life:</b> "Never Stop Learning Because Life Never Stop Teaching"</p>
+            <p><b>Age:</b> 20 yrs. old</p>
+            <p><b>Sex:</b> Male</p>
+            <p><b>Email Address:</b> arbo.pascual.au@phinmaed.com</p>
+            <p><b>Contact Number:</b> 0995-377-1606</p>
+        </div>
+    </div>
+    <center><h1><b>My Photo Album</b></h1></center>
+    <div class="image-container">
+        <a href="pic1.jpg"><img src="pic1.jpg" alt="Picture 1"></a>
+        <a href="pic2.jpg"><img src="pic2.jpg" alt="Picture 2"></a>
+        <a href="pic3.jpg"><img src="pic3.jpg" alt="Picture 3"></a>
+        <a href="pic4.jpg"><img src="pic4.jpg" alt="Picture 4"></a>
+        <a href="pic5.jpg"><img src="pic5.jpg" alt="Picture 5"></a>
+        <a href="pic6.jpg"><img src="pic6.jpg" alt="Picture 6"></a>
+        <a href="pic7.jpg"><img src="pic7.jpg" alt="Picture 7"></a>
+        <a href="pic8.jpg"><img src="pic8.jpg" alt="Picture 8"></a>
+        <a href="pic9.jpg"><img src="pic9.jpg" alt="Picture 9"></a>
+        <a href="pic10.jpg"><img src="pic10.jpg" alt="Picture 10"></a>
+        <a href="pic11.jpg"><img src="pic11.jpg" alt="Picture 11"></a>
+        <a href="pic12.jpg"><img src="pic12.jpg" alt="Picture 12"></a>
+        <a href="pic13.jpg"><img src="pic13.jpg" alt="Picture 13"></a>
+        <a href="pic14.jpg"><img src="pic14.jpg" alt="Picture 14"></a>
+    </div>
+</body>
+</html>

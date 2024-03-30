@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QR Code Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Generate QR Code</h2>
+    </div>
+
+    <div id="button-container" style="text-align: center;">
+        <input type="text" id="qr-code-value" placeholder="Enter text or URL"><br>
+        <button class="button" onclick="generateQRCode()">Generate QR Code</button><br>
+        <img id="qr-code-image" alt="QR code">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script>
+        function generateQRCode() {
+            const value = document.getElementById('qr-code-value').value;
+            const options = {
+                value: value,
+                size: 300,
+                level: 'H'
+            };
+            const qrCode = new QRious(options);
+            const qrCodeImage = qrCode.toDataURL();
+            document.getElementById('qr-code-image').src = qrCodeImage;
+        }
+    </script>
+
+    <center>
+        <a href="exit.html" class="button">EXIT</a>
+    </center>
+
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            background-color: #cbbf95;
+            border-radius: 30px;
+            color: white;
+        }
+
+        .header h2 {
+            font-size: 40px;
+            color: rgb(71, 62, 35);
+        }
+
+        .button {
+            background-color: #cbbf95;
+            border-radius: 8px;
+            color: rgb(6, 5, 3);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(130, 116, 73);
+        }
+    </style>
+</body>
+
+</html>
